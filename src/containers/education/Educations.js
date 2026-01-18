@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Educations.css";
 import DegreeCard from "../../components/degreeCard/DegreeCard.js";
 import { degrees } from "../../portfolio";
+import Certifications from "../../containers/certifications/Certifications";
 import { Fade } from "react-reveal";
 
 class Educations extends Component {
@@ -21,6 +22,7 @@ class Educations extends Component {
             return <DegreeCard degree={degree} theme={theme} />;
           })}
         </div>
+        <Certifications theme={this.props.theme} />
       </div>
     );
   }

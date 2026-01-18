@@ -20,23 +20,28 @@ function SeoHeader() {
       sameAs.push(media.link);
     });
 
-  let mail = socialMediaLinks
-    .find((media) => media.link.startsWith("mailto"))
-    .link.substring("mailto:".length);
+  const mailObj = socialMediaLinks.find((media) =>
+    media.link.startsWith("mailto")
+  );
+  let mail = mailObj ? mailObj.link.substring("mailto:".length) : "";
+
   let job = experience.sections
     ?.find((section) => section.work)
     ?.experiences?.at(0);
 
   let credentials = [];
-  certifications.certifications.forEach((certification) => {
-    credentials.push({
-      "@context": "https://schema.org",
-      "@type": "EducationalOccupationalCredential",
-      url: certification.certificate_link,
-      name: certification.title,
-      description: certification.subtitle,
+  if (certifications && certifications.certifications) {
+    certifications.certifications.forEach((certification) => {
+      credentials.push({
+        "@context": "https://schema.org",
+        "@type": "EducationalOccupationalCredential",
+        url: certification.certificate_link,
+        name: certification.title,
+        description: certification.subtitle,
+      });
     });
-  });
+  }
+
   const data = {
     "@context": "https://schema.org/",
     "@type": "Person",
@@ -45,10 +50,10 @@ function SeoHeader() {
     email: mail,
     telephone: contactPageData.phoneSection?.subtitle,
     sameAs: sameAs,
-    jobTitle: job.title,
+    jobTitle: job ? job.title : "",
     worksFor: {
       "@type": "Organization",
-      name: job.company,
+      name: job ? job.company : "",
     },
     address: {
       "@type": "PostalAddress",
