@@ -2,18 +2,18 @@
 
 // Website related settings
 const settings = {
-  isSplash: false, // Set to false to skip the splash screen with "Ashutosh" branding
+  isSplash: false, // Set to false to skip the splash screen
 };
 
 //SEO Related settings
 const seo = {
-  title: "Sanjay's Portfolio",
+  title: "Sanjay's Portfolio | AI & Full-Stack Engineer",
   description:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "A visionary Software Engineer specializing in Generative AI, Microservices, and Web3. Building the future of education, events, and broadcast technology.",
   og: {
     title: "Sanjay Sharma Portfolio",
     type: "website",
-    url: "http://ashutoshhathidara.com/",
+    url: "https://sanjayportfolio1919.github.io/",
   },
 };
 
@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "Sanjay's Portfolio",
   nickname: "Sanjuthecoder",
   subTitle:
-    "Software Engineer specializing in Java Full-stack, Spring Boot, and MERN. Experienced in building scalable applications like a Decentralized LMS.",
+    "Full-Stack Architect & AI Innovator. Expert in Java Microservices (Spring Boot), Generative AI (Gemini/OpenAI), and Decentralized Systems (Web3/IPFS). Transforming complex problems into high-performance digital experiences.",
   resumeLink: "/SanjaySharmaResume.pdf",
   portfolio_repository: "https://github.com/Sanjuthecoder",
   githubProfile: "https://github.com/Sanjuthecoder",
@@ -47,93 +47,89 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Full Stack Development",
+      title: "AI & Generative Innovation",
+      fileName: "DesignImg",
+      skills: [
+        "⚡ Developing autonomous agents using Google Gemini 2.5 Flash and OpenAI",
+        "⚡ Integrating real-time Text-to-Speech (TTS) with ElevenLabs for broadcast-quality audio",
+        "⚡ Engineering adaptive learning paths using xAPI telemetry and behavioral analytics",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Gemini AI",
+          fontAwesomeClassname: "simple-icons:googlegemini",
+          style: { color: "#8E75C2" },
+        },
+        {
+          skillName: "OpenAI",
+          fontAwesomeClassname: "simple-icons:openai",
+          style: { color: "#412991" },
+        },
+        {
+          skillName: "ElevenLabs",
+          fontAwesomeClassname: "simple-icons:elevenlabs",
+          style: { color: "#141619" },
+        },
+      ],
+    },
+    {
+      title: "Full Stack & Microservices",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building responsive website front end using React-Redux and Next.js",
-        "⚡ Developing scalable backend services using Java Spring Boot and Microservices",
-        "⚡ Creating application backend in Node, Express & Flask",
+        "⚡ Architecting scalable Microservices with Spring Boot, Eureka, and Cloud Gateway",
+        "⚡ Building high-performance frontends with Next.js 16, React 18, and TypeScript",
+        "⚡ Implementing decentralized storage solutions using Web3 (IPFS/Pinata)",
       ],
       softwareSkills: [
         {
           skillName: "Java",
           fontAwesomeClassname: "simple-icons:java",
-          style: {
-            color: "#E34F26",
-          },
+          style: { color: "#E34F26" },
         },
         {
           skillName: "Spring Boot",
           fontAwesomeClassname: "simple-icons:spring",
-          style: {
-            color: "#6DB33F",
-          },
+          style: { color: "#6DB33F" },
         },
         {
-          skillName: "ReactJS",
+          skillName: "Next.js",
+          fontAwesomeClassname: "simple-icons:nextdotjs",
+          style: { color: "#000000" },
+        },
+        {
+          skillName: "TypeScript",
+          fontAwesomeClassname: "simple-icons:typescript",
+          style: { color: "#3178C6" },
+        },
+        {
+          skillName: "React",
           fontAwesomeClassname: "simple-icons:react",
-          style: {
-            color: "#61DAFB",
-          },
-        },
-        {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "devicon-plain:nodejs-wordmark",
-          style: {
-            color: "#339933",
-          },
+          style: { color: "#61DAFB" },
         },
         {
           skillName: "MySQL",
           fontAwesomeClassname: "simple-icons:mysql",
-          style: {
-            color: "#4479A1",
-          },
+          style: { color: "#4479A1" },
         },
         {
           skillName: "MongoDB",
           fontAwesomeClassname: "simple-icons:mongodb",
-          style: {
-            color: "#47A248",
-          },
+          style: { color: "#47A248" },
         },
         {
-          skillName: "Docker",
-          fontAwesomeClassname: "simple-icons:docker",
-          style: {
-            color: "#1488C6",
-          },
+          skillName: "Supabase",
+          fontAwesomeClassname: "simple-icons:supabase",
+          style: { color: "#3ECF8E" },
         },
         {
-          skillName: "Git",
-          fontAwesomeClassname: "simple-icons:git",
-          style: {
-            color: "#F05032",
-          },
-        },
-      ],
-    },
-    {
-      title: "UI/UX Design",
-      fileName: "DesignImg",
-      skills: [
-        "⚡ Designing highly attractive user interface for mobile and web applications",
-        "⚡ Customizing logo designs and building logos from scratch",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Figma",
-          fontAwesomeClassname: "simple-icons:figma",
-          style: {
-            color: "#F24E1E",
-          },
+          skillName: "IPFS",
+          fontAwesomeClassname: "simple-icons:ipfs",
+          style: { color: "#65C2CB" },
         },
         {
-          skillName: "Adobe Photoshop",
-          fontAwesomeClassname: "simple-icons:adobephotoshop",
-          style: {
-            color: "#31A8FF",
-          },
+          skillName: "Tailwind CSS",
+          fontAwesomeClassname: "simple-icons:tailwindcss",
+          style: { color: "#38B2AC" },
         },
       ],
     },
@@ -146,50 +142,14 @@ const competitiveSites = {
     {
       siteName: "LeetCode",
       iconifyClassname: "simple-icons:leetcode",
-      style: {
-        color: "#F79F1B",
-      },
+      style: { color: "#F79F1B" },
       profileLink: "https://leetcode.com/layman_brother/",
     },
     {
       siteName: "HackerRank",
       iconifyClassname: "simple-icons:hackerrank",
-      style: {
-        color: "#2EC866",
-      },
+      style: { color: "#2EC866" },
       profileLink: "https://www.hackerrank.com/layman_brother",
-    },
-    {
-      siteName: "Codechef",
-      iconifyClassname: "simple-icons:codechef",
-      style: {
-        color: "#5B4638",
-      },
-      profileLink: "https://www.codechef.com/users/ashutosh_1919",
-    },
-    {
-      siteName: "Codeforces",
-      iconifyClassname: "simple-icons:codeforces",
-      style: {
-        color: "#1F8ACB",
-      },
-      profileLink: "http://codeforces.com/profile/layman_brother",
-    },
-    {
-      siteName: "Hackerearth",
-      iconifyClassname: "simple-icons:hackerearth",
-      style: {
-        color: "#323754",
-      },
-      profileLink: "https://www.hackerearth.com/@ashutosh391",
-    },
-    {
-      siteName: "Kaggle",
-      iconifyClassname: "simple-icons:kaggle",
-      style: {
-        color: "#20BEFF",
-      },
-      profileLink: "https://www.kaggle.com/laymanbrother",
     },
   ],
 };
@@ -224,14 +184,9 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
   description:
-    "I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as AI Developer. I love organising events and that is why I am also involved with many opensource communities as a representative.",
+    "I specialize in building complex, end-to-end systems that bridge the gap between AI research and production-grade applications. From decentralized education platforms to real-time broadcast AI, I deliver high-impact solutions.",
   header_image_path: "experience.svg",
   sections: [
-    {
-      title: "Work",
-      work: true,
-      experiences: [],
-    },
     {
       title: "Internships",
       work: true,
@@ -260,61 +215,32 @@ const experience = {
         },
       ],
     },
-    {
-      title: "Volunteerships",
-      experiences: [
-        {
-          title: "Volunteer",
-          company: "See Resume for Details",
-          company_url: "",
-          logo_path: "experience.svg",
-          duration: "",
-          location: "",
-          description:
-            "Contributed to various initiatives. (Please update with specific details from resume)",
-          color: "#4285F4",
-        },
-      ],
-    },
   ],
 };
 
 // Projects Page
 const projectsHeader = {
-  title: "Projects",
+  title: "Engineering Masterpieces",
   description:
-    "My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.",
+    "A showcase of high-impact applications where I've pushed the boundaries of Generative AI, Microservices, and Web3. Each project represents a leap in solving real-world challenges with modern engineering.",
   avatar_image_path: "projects_image.svg",
 };
 
 const publicationsHeader = {
   title: "Publications",
-  description: "Some of my published Articles, Blogs and Research.",
+  description: "Insights into AI, EdTech, and Scalable Architectures.",
   avatar_image_path: "projects_image.svg",
 };
 
 const publications = {
   data: [
     {
-      id: "neuro-symbolic-sudoku-solver",
-      name: "Neuro-Symbolic Sudoku Solver",
-      createdAt: "2023-07-02T00:00:00Z",
-      description: "Paper published in KDD KiML 2023",
-      url: "https://arxiv.org/abs/2307.00653",
-    },
-    {
-      id: "mdp-diffusion",
-      name: "MDP-Diffusion",
-      createdAt: "2023-09-19T00:00:00Z",
-      description: "Blog published in Paperspace",
-      url: "https://blog.paperspace.com/mdp-diffusion/",
-    },
-    {
-      id: "consistency-models",
-      name: "Consistency Models",
-      createdAt: "2023-10-12T00:00:00Z",
-      description: "Blog published in Paperspace",
-      url: "https://blog.paperspace.com/consistency-models/",
+      id: "ai-commentary-tech",
+      name: "Real-time AI Commentary Architecture",
+      createdAt: "2024-03-01T00:00:00Z",
+      description:
+        "Technical breakdown of zero-latency dual audio systems in broadcast AI.",
+      url: "https://medium.com/@sanjay",
     },
   ],
 };
@@ -325,59 +251,41 @@ const certifications = {
     {
       title: "PW Skills Certification",
       subtitle: "- PW Skills",
-      logo_path: "education.svg", // Placeholder
+      logo_path: "education.svg",
       certificate_link: "",
       alt_name: "PW Skills",
       color_code: "#8C151599",
     },
     {
-      title: "Industrial Training on Cloud & IOTs",
-      subtitle: "- Cloudcod",
-      logo_path: "education.svg", // Placeholder
-      certificate_link: "",
-      alt_name: "Cloudcod",
-      color_code: "#00000099",
-    },
-    {
       title: "Salesforce Certification",
       subtitle: "- Salesforce",
-      logo_path: "education.svg", // Placeholder
+      logo_path: "education.svg",
       certificate_link: "",
       alt_name: "Salesforce",
       color_code: "#0C9D5899",
     },
-    // Removed third certification to reduce rows
   ],
 };
 
 // Contact Page
 const contactPageData = {
   contactSection: {
-    title: "Contact Me",
+    title: "Hire the Innovator",
     profile_image_path: "animated_ashutosh.png",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with Java Full-stack, MERN, and more.",
-  },
-  blogSection: {
-    title: "Blogs",
-    subtitle:
-      "I like to document some of my experiences in professional career journey as well as some technical knowledge sharing.",
-    link: "https://medium.com/@sanjay", // Placeholder or remove deeply
-    avatar_image_path: "animated_ashutosh.png",
+      "Ready to build the next generation of AI-powered applications? Let's discuss how my expertise in Microservices and Generative AI can accelerate your product roadmap.",
   },
   addressSection: {
-    title: "Address",
+    title: "Location",
     subtitle: "Dausa, Rajasthan, India",
     locality: "Dausa",
     country: "India",
     region: "Rajasthan",
-    postalCode: "",
-    streetAddress: "",
     avatar_image_path: "address_image.svg",
     location_map_link: "",
   },
   phoneSection: {
-    title: "Phone Number",
+    title: "Direct Line",
     subtitle: "+91 6376153144",
   },
 };
@@ -385,69 +293,72 @@ const contactPageData = {
 const projects = {
   data: [
     {
-      id: "lms",
-      name: "Decentralized Learning Management System",
+      id: "ai-commentator",
+      name: "🏏 AI Cricket Commentator",
       description:
-        "Engineered a highly scalable, microservices-based learning marketplace. Developed robust backend services with Java and Spring Boot, integrating a dual-database approach (MySQL and MongoDB). Implemented secure user authentication and a responsive React.js frontend.",
+        "Transforming matches into broadcast experiences! Built a Chrome Extension & Spring Boot backend using Google Gemini 2.5 Flash and ElevenLabs Flash V2.5. Features context-aware commentary, zero-latency dual audio (Web Speech + high-quality MP3), and synthesized dynamic crowd noise via Web Audio API.",
+      url: "https://github.com/Sanjuthecoder",
+      createdAt: "2024-04-01T00:00:00Z",
+      languages: [
+        { name: "Java", iconifyClass: "logos-java" },
+        { name: "Spring Boot", iconifyClass: "logos-spring-icon" },
+        { name: "Gemini AI", iconifyClass: "simple-icons:googlegemini" },
+        { name: "JavaScript", iconifyClass: "logos-javascript" },
+      ],
+    },
+    {
+      id: "delearn-ai",
+      name: "🧠 DeLearn-AI (Smart-DLMS)",
+      description:
+        "A decentralized Learning Management System (LMS) democratizing education. Architected with Spring Boot Microservices (Eureka, Gateway), Web3 storage (IPFS), and a Generative AI Tutor (Gemini). Features secure JWT RBAC and a high-performance React dashboard.",
+      url: "https://github.com/Sanjuthecoder",
+      createdAt: "2024-02-01T00:00:00Z",
+      languages: [
+        { name: "Microservices", iconifyClass: "logos-spring-icon" },
+        { name: "React", iconifyClass: "logos-react" },
+        { name: "IPFS", iconifyClass: "simple-icons:ipfs" },
+        { name: "MongoDB", iconifyClass: "logos-mongodb" },
+      ],
+    },
+    {
+      id: "hostmyevent",
+      name: "📅 HostMyEvent",
+      description:
+        "Premium full-stack event management platform. Built with Spring Boot 3.x and React 18+ (TypeScript/Tailwind). Features role-based access, dynamic event discovery, real-time engagement, and multi-step event creation with media uploads via Pinata (IPFS).",
       url: "https://github.com/Sanjuthecoder",
       createdAt: "2024-01-01T00:00:00Z",
       languages: [
-        {
-          name: "Java",
-          iconifyClass: "logos-java",
-        },
-        {
-          name: "Spring Boot",
-          iconifyClass: "logos-spring-icon",
-        },
-        {
-          name: "React",
-          iconifyClass: "logos-react",
-        },
-        {
-          name: "MySQL",
-          iconifyClass: "logos-mysql",
-        },
-        {
-          name: "MongoDB",
-          iconifyClass: "logos-mongodb",
-        },
+        { name: "React", iconifyClass: "logos-react" },
+        { name: "TypeScript", iconifyClass: "logos-typescript-icon" },
+        { name: "MySQL", iconifyClass: "logos-mysql" },
+        { name: "Tailwind", iconifyClass: "logos-tailwindcss-icon" },
       ],
     },
     {
-      id: "chat-app",
-      name: "Real-time Chatting App",
+      id: "jaiman-builders",
+      name: "🏗️ Jaiman Builders CMS",
       description:
-        "Engineered a messaging solution with Socket.io for real-time communication and data synchronization. Integrated interactive frontend components with a Node.js backend for low-latency messaging.",
+        "High-performance dynamic web platform for architecture firms. Built with Next.js 16 and Supabase (PostgreSQL). Features an immersive public portfolio, private Admin dashboard for content management, automated lead capture, and Edge Middleware security.",
       url: "https://github.com/Sanjuthecoder",
-      createdAt: "2023-11-01T00:00:00Z",
+      createdAt: "2023-12-01T00:00:00Z",
       languages: [
-        {
-          name: "React",
-          iconifyClass: "logos-react",
-        },
-        {
-          name: "Node.js",
-          iconifyClass: "logos-nodejs",
-        },
-        {
-          name: "Socket.io",
-          iconifyClass: "logos-javascript", // Placeholder
-        },
+        { name: "Next.js", iconifyClass: "logos-nextjs-icon" },
+        { name: "Supabase", iconifyClass: "logos-supabase-icon" },
+        { name: "Tailwind", iconifyClass: "logos-tailwindcss-icon" },
       ],
     },
     {
-      id: "tic-tac-toe",
-      name: "Tic Tac Toe",
+      id: "smartlms-adaptive",
+      name: "🎓 SmartLMS: Adaptive AI",
       description:
-        "A classic Tic Tac Toe game built with React. Features a clean UI and interactive gameplay.",
+        "Next-gen EdTech platform leveraging xAPI telemetry for personalized learning. Monitors student interaction (hesitation, cognitive load) in real-time to adjust curriculum dynamically. Built with Node.js/Express, MongoDB, and a sleek Glassmorphism UI.",
       url: "https://github.com/Sanjuthecoder",
       createdAt: "2023-10-01T00:00:00Z",
       languages: [
-        {
-          name: "React",
-          iconifyClass: "logos-react",
-        },
+        { name: "Node.js", iconifyClass: "logos-nodejs-icon" },
+        { name: "Express", iconifyClass: "logos-express" },
+        { name: "xAPI", iconifyClass: "logos-javascript" },
+        { name: "MongoDB", iconifyClass: "logos-mongodb" },
       ],
     },
   ],
