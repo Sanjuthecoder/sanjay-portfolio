@@ -1,0 +1,196 @@
+.footer {
+  position: relative;
+  background: var(--bg-surface);
+  border-top: 1px solid var(--glass-border);
+  padding-top: 72px;
+  overflow: hidden;
+}
+
+.footer__glow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 200px;
+  background: radial-gradient(ellipse at center bottom, rgba(108,99,255,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 48px;
+}
+
+/* Brand */
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  margin-bottom: 14px;
+  transition: filter 0.25s ease;
+}
+
+.footer__logo:hover {
+  filter: drop-shadow(0 0 10px rgba(108,99,255,0.4));
+}
+
+.footer__logo-bracket {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: -0.03em;
+}
+
+.footer__logo-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding: 0 3px;
+}
+
+.footer__tagline {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.footer__social {
+  display: flex;
+  gap: 12px;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  transition: all var(--transition-fast);
+}
+
+.footer__social-link:hover {
+  background: var(--glass-hover);
+  color: var(--text-primary);
+  border-color: rgba(255,255,255,0.15);
+  transform: translateY(-2px);
+}
+
+.footer__social-link--linkedin:hover {
+  color: #0A66C2;
+  border-color: #0A66C2;
+}
+
+/* Nav */
+.footer__nav-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.footer__nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__nav-link {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+}
+
+.footer__nav-link:hover { color: var(--text-primary); }
+
+/* Contact */
+.footer__contact-item {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.footer__resume-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-light);
+  transition: color var(--transition-fast);
+}
+
+.footer__resume-link:hover { color: var(--accent); }
+
+/* Bottom bar */
+.footer__bottom {
+  border-top: 1px solid var(--glass-border);
+  padding: 20px 0;
+}
+
+.footer__bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer__copy,
+.footer__made {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer__heart {
+  color: #FF6B6B;
+  animation: pulse-dot 1.5s ease-in-out infinite;
+}
+
+/* =========================================
+   RESPONSIVE — FOOTER
+   ========================================= */
+@media (max-width: 768px) {
+  .footer { padding-top: 52px; }
+  .footer__inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding-bottom: 36px;
+  }
+  .footer__bottom-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  .footer__glow { width: 300px; height: 120px; }
+}
+
+@media (max-width: 480px) {
+  .footer { padding-top: 40px; }
+  .footer__logo-bracket { font-size: 1rem; }
+  .footer__logo-name { font-size: 0.95rem; }
+  .footer__tagline { font-size: 0.85rem; }
+  .footer__inner { gap: 28px; padding-bottom: 28px; }
+  .footer__nav-list { gap: 8px; }
+  .footer__nav-link { font-size: 0.88rem; }
+  .footer__contact-item { font-size: 0.82rem; }
+  .footer__copy { font-size: 0.78rem; }
+}

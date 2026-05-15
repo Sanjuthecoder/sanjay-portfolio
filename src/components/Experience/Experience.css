@@ -1,0 +1,164 @@
+.timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline__line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, transparent, var(--primary) 15%, var(--accent) 85%, transparent);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding-bottom: 48px;
+}
+
+.timeline-item--left {
+  left: 0;
+  padding-right: 56px;
+}
+
+.timeline-item--right {
+  left: 50%;
+  padding-left: 56px;
+}
+
+/* Timeline dot */
+.timeline-dot {
+  position: absolute;
+  top: 24px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--dot-color, var(--primary));
+  border: 3px solid var(--bg-base);
+  box-shadow: 0 0 0 2px var(--dot-color, var(--primary)), 0 0 20px var(--dot-color, var(--primary));
+  z-index: 2;
+}
+
+.timeline-item--left .timeline-dot {
+  right: -8px;
+}
+
+.timeline-item--right .timeline-dot {
+  left: -8px;
+}
+
+/* Card */
+.timeline-card {
+  padding: 28px;
+  transition: all var(--transition-base);
+}
+
+.timeline-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(108,99,255,0.2);
+}
+
+.timeline-card__top {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.timeline-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: white;
+  flex-shrink: 0;
+}
+
+.timeline-card__title {
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.timeline-card__company {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.timeline-card__duration {
+  margin-left: auto;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+.timeline-card__desc {
+  font-size: 0.88rem;
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.timeline-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  padding: 4px 12px;
+  background: rgba(108,99,255,0.1);
+  border: 1px solid rgba(108,99,255,0.2);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--primary-light);
+}
+
+/* =========================================
+   RESPONSIVE — EXPERIENCE TIMELINE
+   ========================================= */
+@media (max-width: 768px) {
+  .timeline__line { left: 20px; }
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    padding-left: 52px !important;
+    padding-right: 0 !important;
+    padding-bottom: 32px;
+  }
+  .timeline-dot {
+    left: 12px !important;
+    right: auto !important;
+    top: 20px;
+    width: 14px;
+    height: 14px;
+  }
+  .timeline-card { padding: 20px; }
+  .timeline-card__top { gap: 10px; }
+  .timeline-card__icon { width: 38px; height: 38px; font-size: 1rem; }
+  .timeline-card__duration { margin-left: 0; width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .timeline__line { left: 16px; }
+  .timeline-item { padding-left: 42px !important; }
+  .timeline-dot { left: 8px !important; width: 12px; height: 12px; }
+  .timeline-card { padding: 16px; }
+  .timeline-card__title { font-size: 0.95rem; }
+  .timeline-card__desc { font-size: 0.83rem; }
+  .tag { font-size: 0.7rem; padding: 3px 10px; }
+}
