@@ -27,8 +27,8 @@ export const greeting = {
 };
 
 export const stats = [
-  { value: 5, label: "Projects Built", suffix: "+" },
-  { value: 15, label: "Technologies", suffix: "+" },
+  { value: 7, label: "Projects Built", suffix: "+" },
+  { value: 20, label: "Technologies", suffix: "+" },
   { value: 2, label: "Internships", suffix: "" },
   { value: 1, label: "Publications", suffix: "" },
 ];
@@ -73,14 +73,18 @@ export const skills = [
       "Architecting scalable backends, high-performance frontends, and decentralized storage.",
     items: [
       { name: "Java", icon: "simple-icons:java", color: "#E34F26" },
+      { name: "Python", icon: "simple-icons:python", color: "#3776AB" },
       { name: "Spring Boot", icon: "simple-icons:spring", color: "#6DB33F" },
+      { name: "FastAPI", icon: "simple-icons:fastapi", color: "#009688" },
       { name: "React", icon: "simple-icons:react", color: "#61DAFB" },
       { name: "Next.js", icon: "simple-icons:nextdotjs", color: "#E0E0E0" },
       { name: "TypeScript", icon: "simple-icons:typescript", color: "#3178C6" },
       { name: "Node.js", icon: "simple-icons:nodedotjs", color: "#339933" },
+      { name: "PostgreSQL", icon: "simple-icons:postgresql", color: "#4169E1" },
       { name: "MySQL", icon: "simple-icons:mysql", color: "#4479A1" },
       { name: "MongoDB", icon: "simple-icons:mongodb", color: "#47A248" },
       { name: "Supabase", icon: "simple-icons:supabase", color: "#3ECF8E" },
+      { name: "Apache Kafka", icon: "simple-icons:apachekafka", color: "#231F20" },
       { name: "IPFS", icon: "simple-icons:ipfs", color: "#65C2CB" },
       { name: "Docker", icon: "simple-icons:docker", color: "#2496ED" },
       { name: "Tailwind CSS", icon: "simple-icons:tailwindcss", color: "#38B2AC" },
@@ -97,6 +101,16 @@ export const experience = {
   description:
     "I specialize in building complex, end-to-end systems that bridge the gap between AI research and production-grade applications. From decentralized education platforms to real-time broadcast AI, I deliver high-impact solutions.",
   items: [
+    {
+      title: "Trainee Software Engineer",
+      company: "Academian Inc",
+      duration: "March 2026 – Present",
+      location: "Pune, India",
+      description:
+        "Contributing to enterprise-level EdTech solutions at a global education technology company. Involved in developing and scaling learning management systems and digital engineering platforms, leveraging modern full-stack technologies to deliver impactful products for publishers and educational institutions.",
+      color: "#FF6B6B",
+      tags: ["EdTech", "LMS", "Full-Stack", "Software Engineering"],
+    },
     {
       title: "UI/UX Designer",
       company: "House Of MarkTech",
@@ -155,6 +169,32 @@ export const certifications = [
 ];
 
 export const projects = [
+  {
+    id: "ai-resume-screener",
+    title: "AI Resume Screener & Interview Bot",
+    emoji: "🤖",
+    category: "AI",
+    description:
+      "A comprehensive AI-driven platform automating resume screening and technical interviews. Features 'Theta Overflow' adaptive questioning (Item Response Theory), live coding assessments with real-time test execution, and automated candidate reporting. Built with FastAPI, React, Supabase, and advanced LLMs.",
+    github: "https://github.com/Sanjuthecoder",
+    live: "",
+    tags: ["React", "FastAPI", "Python", "Supabase", "PostgreSQL", "Gemini AI"],
+    tagColors: ["#61DAFB", "#009688", "#3776AB", "#3ECF8E", "#4169E1", "#8E75C2"],
+    gradient: "linear-gradient(135deg, #11998E, #38EF7D)",
+  },
+  {
+    id: "enterprise-lms",
+    title: "Enterprise LMS",
+    emoji: "🏢",
+    category: "Full-Stack",
+    description:
+      "A highly scalable, microservices-based Learning Management System for enterprise environments. Integrates API Gateway, Eureka discovery, JWT identity, and event-driven telemetry via Apache Kafka. Features AI-generated quizzes using Google Gemini and polyglot persistence (PostgreSQL/MongoDB).",
+    github: "https://github.com/Sanjuthecoder",
+    live: "",
+    tags: ["Java", "Spring Boot", "React", "Apache Kafka", "PostgreSQL", "Microservices"],
+    tagColors: ["#E34F26", "#6DB33F", "#61DAFB", "#231F20", "#4169E1", "#6C63FF"],
+    gradient: "linear-gradient(135deg, #FDBB2D, #22C1C3)",
+  },
   {
     id: "ai-commentator",
     title: "AI Cricket Commentator",
